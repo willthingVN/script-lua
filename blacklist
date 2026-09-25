@@ -1,5 +1,5 @@
-local BLACKLIST_IDS = {7071258586
-   not have
+local BLACKLIST_IDS = {
+   7071258586
 }
 
 local function isUserBlacklisted(userId)
