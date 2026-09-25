@@ -1,0 +1,16 @@
+local BLACKLIST_IDS = {
+   not have
+}
+
+local function isUserBlacklisted(userId)
+    for _, id in ipairs(BLACKLIST_IDS) do
+        if id == userId then return true end
+    end
+    return false
+end
+
+if isUserBlacklisted(game:GetService("Players").LocalPlayer.UserId) then
+    game:GetService("Players").LocalPlayer:Kick("You have been blacklisted by the script. Please go to Discord to appeal.")
+    return
+end
+  
