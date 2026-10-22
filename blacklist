@@ -1,5 +1,5 @@
 local BLACKLIST_IDS = {
-   7729880318
+   8672288672
 }
 
 local function isUserBlacklisted(userId)
